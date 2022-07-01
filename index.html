@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <title>front challenge | IP Address Tracker</title>
+</head>
+<body>
+
+
+    <div id="container">
+
+
+
+
+        <div id="information">
+
+
+            <h1>IP Address Tracker</h1>
+
+            <div id="searchBar">
+                <input type="text" id="searchedIP" placeholder="enter your IP">
+                <button onclick="searchIP()"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+            </div>
+
+            <div id="displayInformation">
+                <div class="displayInformationItem">
+                    <h3>IP</h3>
+                    <p id="ipShowing"></p>
+                </div>
+                <div class="displayInformationItem">
+                    <h3>LOCATION</h3>
+                    <p id="locationShowing"></p>
+                </div>
+                <div class="displayInformationItem">
+                    <h3>CALLING CODE</h3>
+                    <p id="callingcodeShowing"></p>
+                </div>
+                <div class="displayInformationItem">
+                    <h3>ISP</h3>
+                    <p id="ispShowing"></p>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+        <div id="map"></div>
+
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
